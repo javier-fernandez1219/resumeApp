@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .gradient-background {
     /* Define your gradient here */
     background-image: linear-gradient(to right, #e66465, #090f53);
-    
+
+ 
 }
 
 .header-main-logo {
@@ -76,7 +78,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: #6CACE4;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -122,7 +124,7 @@
     right: 30px;
     border: medium solid white;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #6CACE4;
 }
 
 .right::before {
@@ -135,7 +137,7 @@
     left: 30px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #6CACE4 transparent transparent;
 }
 
 .right::after {
@@ -144,7 +146,7 @@
 
 .timeline-content {
     padding: 20px 30px;
-    background-color: white;
+    background-color: #6CACE4;
     position: relative;
     border-radius: 6px;
 }
@@ -221,8 +223,121 @@
         visibility: visible;
     }
 }
-.image {
-    width: 300px;
-    margin-left: 15px;
+
+.section-header {
+    font-size: 4.5rem!important;
+    padding: 60px;
+    font-family: 'BLACK BUBBLE', sans-serif;
 }
 
+.checkbox {
+    position: absolute; /* Keeps the checkbox in a fixed position on the screen */
+    top: 60px;       /* Distance from the top of the viewport */
+    right: 20px;     /* Distance from the right of the viewport */
+    /* Add other styling as needed */
+}
+.color-mode-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.color-mode-checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.color-mode-checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.color-mode-checkbox:checked + .color-mode-checkbox-label .ball{
+    transform: translateX(-24px);
+}
+
+.about-section {
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: center; /* Aligns items horizontally in the center */
+    gap: 10px; /* Optional: Adds space between items */
+    padding: 100px;
+}
+
+.about-section img{
+    width: 300px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%; /* makes image round */
+    border: 3px solid black; /* adds color border */
+    box-shadow: 0 0 10px #888888;
+}
+.about-section img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+}
+  
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg); }
+    10% {transform: translate(-1px, -2px) rotate(-1deg); }
+    20% {transform: translate(-3px, 0px) rotate(1deg); }
+    30% {transform: translate(3px, 2px) rotate(0deg); }
+    40% {transform: translate(1px, -1px) rotate(1deg); }
+    50% {transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.about-section p{
+    border: 5px solid black;
+    padding: 15px;
+    font-family: 'BLACK BUBBLE', sans-serif;
+    border-radius: 15%;
+    text-decoration: none;
+    word-wrap: break-word; /* Ensures long words do not overflow */
+}
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.skills-icons a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+    margin-top: 8px;
+}

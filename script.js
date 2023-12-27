@@ -1,14 +1,11 @@
-document.getElementById('toggleButton').addEventListener('click', function() {
-    // Getting the current background color
-    var currentColor = document.body.style.backgroundColor;
-    console.log(currentColor)
-
-    // Toggling the color
-    if (currentColor === 'white') {
-        // Change this to your original background color
-        document.body.style.backgroundColor = 'black';
-    } else {
-        document.body.style.backgroundColor = 'white';
-        document.body.style.backgroundColor = '';
+document.getElementById("color-mode-checkbox").addEventListener("change", function() {
+    if (this.checked) {
+        document.getElementById("myDiv").style.backgroundImage = 'None'
+        document.getElementById("myDiv").style.backgroundColor = 'white'
+    }else{
+        document.getElementById("myDiv").style.backgroundImage = 'linear-gradient(to right, #e66465, #090f53)'
+        document.getElementById("myDiv").style.backgroundColor = 'black'
     }
-});
+    
+}
+)
