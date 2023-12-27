@@ -2,7 +2,8 @@
 .gradient-background {
     /* Define your gradient here */
     background-image: linear-gradient(to right, #e66465, #090f53);
-
+    max-height: 100%;
+    max-width: 100%;
  
 }
 
@@ -394,4 +395,8 @@
 .interest p {
     margin-top: 10px;
     font-family: 'Super Bubble', sans-serif;
+}
+.construction-image {
+    max-height: 100%;
+    max-width: 100%;
 }
