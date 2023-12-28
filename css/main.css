@@ -96,6 +96,10 @@
     align-items: start;
 }
 
+.experience-section li{
+    padding: 5px;
+}
+
 .experience-section-container {
     padding: 10px 40px;
     position: relative;
@@ -327,7 +331,7 @@
 
 .text-box-text{
     border: 5px solid black;
-    padding: 15px;
+    padding: 30px;
     font-family: 'Super Bubble', sans-serif;
     border-radius: 15%;
     text-decoration: none;
@@ -415,5 +419,8 @@
     }
     .section-header{
         word-wrap: break-word;
+    }
+    .bio-image {
+    order: -1;
     }
 }
